@@ -1,22 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import Componente from './components/Componente';
+import Estado from "./components/Estado";
+import Propiedades from "./components/Propiedades";
+import RenderizadoCondicional from "./components/RenderizadoCondicional";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <section>
+        <Componente msg="Hola soy un componente funcional expresado desde una prop"/>
+        <Propiedades 
+            cadena="Esta es una cadena" 
+            numero={22} 
+            boolean={true}
+            arreglo={[1,2,3]}
+            objeto={{nombre:"Dani",correo:"danicisneros2@hotmail.com"}}
+            funcion={(num)=>num*num}
+            elementoReact={<i>Esto es un elemento react</i>}
+            componenteReact={<Componente msg="soy un componente pasado como prop"/>}
+        />
+        <hr/>
+        <Estado/>
+        <hr/>
+        <RenderizadoCondicional/>
+        </section>
       </header>
     </div>
   );
