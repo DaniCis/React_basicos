@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-export default function Propiedades  (props) {
+export default  Propiedades = (props) => {
     return(
         <div>
             <h2>{props.porDefecto}</h2>
