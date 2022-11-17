@@ -1,9 +1,9 @@
 import PropTypes from "prop-types";
 
-export default  Propiedades = (props) => {
+const Propiedades = (props) => {
     return(
         <div>
-            <h2>{props.porDefecto}</h2>
+            <h3>{props.porDefecto}</h3>
             <ul>
                 <li>{props.cadena}</li>
                 <li>{props.numero}</li>
@@ -25,3 +25,5 @@ Propiedades.defaultProps={
 Propiedades.propTypes={
     numero:PropTypes.number.isRequired,
 };
+
+export default Propiedades;

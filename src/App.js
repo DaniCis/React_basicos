@@ -3,6 +3,7 @@ import Componente from './components/Componente';
 import Estado from "./components/Estado";
 import Propiedades from "./components/Propiedades";
 import RenderizadoCondicional from "./components/RenderizadoCondicional";
+import RenderizadoElementos from './components/RenderizadoElementos';
 
 function App() {
   return (
@@ -21,9 +22,11 @@ function App() {
           componenteReact={<Componente msg="soy un componente pasado como prop"/>}
         />
         <hr/>
-        <Estado/>
+        <Estado />
         <hr/>
-        <RenderizadoCondicional/>
+        <RenderizadoCondicional />
+        <hr/>
+        <RenderizadoElementos />
         </section>
       </header>
     </div>

@@ -1,7 +1,7 @@
-import React,{Component} from 'react';
+import React from 'react';
 
 //función expresada
-const Componente = props => <h2>{props.msg}</h2>
+const Componente = props => <h4>{props.msg}</h4>
 
 /* Funcion declarada
 function Componente(props){
