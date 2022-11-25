@@ -21,12 +21,12 @@ export default class RenderizadoElementos extends Component {
     render(){
         return(
             <div>
-                <h2>Renderizado de Elementos</h2>
-                <h3>Estaciones del año</h3>
+                <h3>Renderizado de Elementos</h3>
+                <h4>Estaciones del año</h4>
                 <ol>
                     {this.state.seasons.map( (x,index) => <li key={index}>{x}</li>) }
                 </ol>
-                <h3>Frameworks Frontend JS</h3>
+                <h4>Frameworks Frontend JS</h4>
                 <ul>
                     {data.frameworks.map( x => <ElementoLista key={x.id} {...x}/> )}
                 </ul>

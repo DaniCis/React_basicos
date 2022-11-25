@@ -2,13 +2,13 @@ import React, { Component } from "react";
 
 const Login = () =>(
     <div>
-        <h3>Login</h3>
+        <h4>Login</h4>
     </div>
 )
 
 const Logout = () =>(
     <div>
-        <h3>Logout</h3>
+        <h4>Logout</h4>
     </div>
 )
 
@@ -23,7 +23,7 @@ export default class RenderizadoCondicional extends Component{
     render(){
         return(
             <div>  
-                <h2>Renderizado Condicional</h2>
+                <h3>Renderizado Condicional</h3>
                 {this.state.session ? <Login/> : <Logout/> }
             </div>
         )

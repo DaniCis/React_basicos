@@ -22,7 +22,7 @@ export class EventosES6 extends Component {
   render() {
     return (
         <div>
-            <h2>Eventos en Componentes de Clase ES6</h2>
+            <h3>Eventos en Componentes de Clase ES6</h3>
             <nav>
                 <button onClick={this.sumar}>+</button>
                 <button onClick={this.restar}>-</button>
@@ -51,12 +51,12 @@ export class EventosES7 extends Component {
   render() {
     return (
         <div>
-            <h2>Eventos en Componentes de Clase ES7</h2>
+            <h3>Eventos en Componentes de Clase ES7</h3>
             <nav>
                 <button onClick={this.sumar}>+</button>
                 <button onClick={this.restar}>-</button>
             </nav>
-            <h3>{this.state.contador}</h3>
+            <h4>{this.state.contador}</h4>
         </div>
     )
   }
@@ -74,7 +74,7 @@ export class MasSobreEventos extends Component{
     render(){
         return(
             <div>
-                <h2>Más Sobre Eventos</h2>
+                <h3>Más Sobre Eventos</h3>
                 <button onClick={ (e) => this.handleClick(e,'Hola, paso parametro')}>Saludar</button>
                 {/** Evento personalizado */}
                 <Boton myOnClick={(e) => this.handleClick(e,'Hola, paso parametro') }/>

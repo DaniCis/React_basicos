@@ -24,7 +24,7 @@ export default class Estado extends Component{
     render(){
         return(
             <div>
-                <h2>El State</h2>
+                <h3>El State</h3>
                 <p>{this.state.contador}</p>
                 <EstadoAHijo contadorHijo={this.state.contador}/>
             </div>

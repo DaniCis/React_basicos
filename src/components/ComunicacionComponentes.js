@@ -12,7 +12,7 @@ export default class Padre extends Component {
   render() {
     return (
       <div>
-        <h2>Comunicacion entre Componentes</h2>
+        <h3>Comunicacion entre Componentes</h3>
         <p>Contador <b>{this.state.contador}</b></p>
         <Hijo incrementarContador={this.incrementarContador} message ='Mensaje para el componente hijo' />
     </div>
